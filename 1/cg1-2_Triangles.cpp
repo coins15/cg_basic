@@ -11,9 +11,9 @@ void display(void) {
 
     glBegin(GL_TRIANGLES);
     rep(i, 5) rep(j, 5) {
-        glVertex2d(0.4 *  i      - 1.0, -1 + 0.4 * j);
-        glVertex2d(0.4 * (i + 1) - 1.0, -1 + 0.4 * j);
-        glVertex2d(0.4 * (i + 1) - 1.0, -1 + 0.4 * (j + 1));
+        glVertex2d(0.4 *  i      - 1.0, 0.4 *  j     -1.0);
+        glVertex2d(0.4 * (i + 1) - 1.0, 0.4 *  j     -1.0);
+        glVertex2d(0.4 * (i + 1) - 1.0, 0.4 * (j + 1)-1.0);
     }
     glEnd();
     glFlush(); // 画面出力
